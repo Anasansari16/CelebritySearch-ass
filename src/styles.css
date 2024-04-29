@@ -1,0 +1,292 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+.container h1{
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+}
+.container h1 span{
+  color: #ff6e01;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.user-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-details {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.user-details img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user-details p {
+  margin: 0;
+}
+
+.accordion-icon {
+  margin-left: auto;
+  font-size: 24px;
+  border-radius: 1px;
+}
+
+.accordion-icon.open {
+  transform: rotate(90deg);
+}
+
+.user-details-expanded {
+  padding: 10px;
+}
+
+.user-details-expanded p {
+  margin: 5px 0;
+}
+
+.delete-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.delete-modal p {
+  margin: 0 0 10px;
+}
+
+.delete-modal button {
+  padding: 5px 10px;
+  margin-right: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.delete-modal button:hover {
+  background-color: #ff6e01;
+}
+
+.custom-alert {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff6e01;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 1000;
+}
+.edit-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.edit-form {
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  
+  
+  
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 10px;
+  
+}
+.form-group select {
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-group input {
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ccc;
+  padding-right: 37px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1; 
+  flex-grow: 1; 
+
+}
+
+.button-container {
+  text-align: center;
+}
+
+.save-button {
+  background-color: lightgreen;
+  color: #000000;
+  padding: 7px 20px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: lightcoral;
+  color: #000000;
+  padding: 7px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.user-details-expanded {
+  color: lightgray;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.profile-info p {
+  margin: 0;
+}
+
+.profile-answer {
+  display: block;
+  margin-top: 5px;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 500;
+  
+}
+
+.profile-detail {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.user-details-expanded p {
+  color: #ccc;
+  padding-right: 37px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+
+.description-info {
+  margin-top: 21px;
+}
+
+.description-info p {
+  margin: 0;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.description-row {
+  margin-top: 10px; 
+}
+
+
+
+
+/* Style for edit and delete buttons */
+.edit-buttons button {
+  padding: 7px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 7px;
+
+}
+
+.edit-buttons .edit-but {
+  background-color: lightblue;
+  color: #000000;
+}
+.edit-buttons .delete-but {
+  background-color: lightcoral;
+  color: #000000;
+}
+.edit-buttons .edit-but:hover,
+.edit-buttons .delete-but:hover {
+  background-color: #f9f9f9;
+}
+.save-button:hover{
+  background-color: #f9f9f9;
+}
+
+.cancel-button:hover{
+  background-color: #f9f9f9;
+}
