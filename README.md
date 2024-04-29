@@ -1,4 +1,4 @@
-Link: https://celebrity-search-ass.vercel.app/
+Project Link: https://celebrity-search-ass.vercel.app/
 
 # Getting Started with Create React App
 
